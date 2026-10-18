@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srikar Portfolio | Product Designer & Creative Technologist</title>
+  <meta name="description"
+    content="Portfolio of Srikar - Product Designer & UI/UX Specialist crafting high-impact digital products, interactive 3D experiences, and modern web applications.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+
+<body>
+
+  <!-- Fullscreen 3D Scroll Canvas Background -->
+  <canvas id="animation-canvas"></canvas>
+
+  <!-- Page Content Overlaid on Scroll Animation -->
+  <div class="page-wrapper">
+
+    <!-- Mobile Navigation Backdrop Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <!-- Floating Pill Header -->
+    <header class="header-container">
+      <nav class="pill-navbar">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-icon">S</span>
+          <span class="logo-text">Srikar <span class="accent-text">Portfolio</span></span>
+        </a>
+
+        <!-- Left-to-Right Slide Drawer on Mobile -->
+        <ul class="nav-links" id="nav-links">
+          <!-- Mobile Drawer Header with Close Button -->
+          <li class="mobile-drawer-header">
+            <a href="#hero" class="brand-logo">
+              <span class="logo-icon">S</span>
+              <span class="logo-text">Srikar <span class="accent-text">Portfolio</span></span>
+            </a>
+            <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close navigation">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </li>
+
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#why-me" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+
+          <!-- Mobile Drawer Footer CTA -->
+          <li class="mobile-drawer-footer">
+            <a href="#contact" class="btn btn-primary btn-md mobile-drawer-btn">Get in Touch <span
+                class="arrow">↗</span></a>
+          </li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">Get in Touch <span class="arrow">↗</span></a>
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+
+        <!-- Center Top: Hello Badge & Title -->
+        <div class="hero-header-content">
+          <div class="badge-pill">
+            <span class="sparkle">👋</span> Hello!
+          </div>
+          <h1 class="hero-title">
+            I'm <span class="accent-text">Srikar</span>,<br>
+            Product Designer
+          </h1>
+        </div>
+
+        <!-- Center Area is deliberately left open to showcase Srikar's 3D scroll turn -->
+        <div class="hero-visual-spacer"></div>
+
+        <!-- Hero Flanking Content -->
+        <div class="hero-grid">
+          <!-- Left Metric & Quote -->
+          <div class="hero-card hero-left glass-card">
+            <div class="quote-mark">“</div>
+            <p class="hero-quote-text">
+              Srikar's exceptional design skills transformed our vision into an intuitive, high-converting product.
+            </p>
+            <div class="stat-highlight">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Clients Worldwide</span>
+            </div>
+          </div>
+
+          <!-- Center CTAs -->
+          <div class="hero-center-cta">
+            <a href="projects.html" class="btn btn-primary btn-lg">Projects <span class="arrow">↗</span></a>
+            <a href="#contact" class="btn btn-glass btn-lg">Get in Touch</a>
+          </div>
+
+          <!-- Right Metric & Rating -->
+          <div class="hero-card hero-right glass-card">
+            <div class="rating-stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="rating-val">5.0</span>
+            </div>
+            <div class="stat-highlight">
+              <span class="stat-num">10 Years</span>
+              <span class="stat-label">Industry Expertise</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-down-indicator">
+          <span class="mouse-icon">
+            <span class="wheel"></span>
+          </span>
+          <span class="scroll-text">Scroll down to explore</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. My Services Section -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-title-wrap">
+            <h2 class="section-title">My <span class="accent-text">Services</span></h2>
+          </div>
+          <p class="section-subtitle">
+            Transforming ambitious ideas into exceptional digital experiences through user-centered design, sleek
+            aesthetics, and precision engineering.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service Card 1 -->
+          <div class="service-card glass-card">
+            <div class="service-card-top">
+              <h3 class="service-title">UI/UX Design</h3>
+              <p class="service-desc">User research, wireframing, high-fidelity prototypes, and fluid interactive design
+                systems.</p>
+            </div>
+            <div class="service-preview-frame">
+              <div class="mockup-device-mobile">
+                <div class="mockup-notch"></div>
+                <div class="mockup-content">
+                  <div class="mockup-pill-header"></div>
+                  <div class="mockup-banner"></div>
+                  <div class="mockup-grid-2">
+                    <div class="mockup-thumb"></div>
+                    <div class="mockup-thumb"></div>
+                  </div>
+                  <div class="mockup-item-row"></div>
+                  <div class="mockup-item-row"></div>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-bottom">
+              <a href="#portfolio" class="service-arrow-btn" aria-label="View UI/UX Design Projects">
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card 2 (Featured / Orange Accent) -->
+          <div class="service-card glass-card featured">
+            <div class="featured-badge">Featured</div>
+            <div class="service-card-top">
+              <h3 class="service-title">Web Design</h3>
+              <p class="service-desc">Tailored responsive websites, SaaS platforms, design systems, and award-winning
+                web aesthetics.</p>
+            </div>
+            <div class="service-preview-frame">
+              <div class="mockup-device-desktop">
+                <div class="mockup-browser-bar">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <div class="browser-url-pill"></div>
+                </div>
+                <div class="mockup-desktop-content">
+                  <div class="mockup-desktop-hero"></div>
+                  <div class="mockup-desktop-columns">
+                    <div class="col col-left"></div>
+                    <div class="col col-right"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-bottom">
+              <a href="#portfolio" class="service-arrow-btn active" aria-label="View Web Design Projects">
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="service-card glass-card">
+            <div class="service-card-top">
+              <h3 class="service-title">Landing Page</h3>
+              <p class="service-desc">Conversion-optimized landing pages, motion micro-interactions, and engaging
+                promotional storytelling.</p>
+            </div>
+            <div class="service-preview-frame">
+              <div class="mockup-device-desktop">
+                <div class="mockup-browser-bar">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <div class="browser-url-pill"></div>
+                </div>
+                <div class="mockup-desktop-content">
+                  <div class="mockup-landing-header"></div>
+                  <div class="mockup-landing-cards">
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                    <div class="mini-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-bottom">
+              <a href="#portfolio" class="service-arrow-btn" aria-label="View Landing Page Projects">
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Work Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <h2 class="section-title">My Work <span class="accent-text">Experience</span></h2>
+          <p class="section-subtitle centered">A timeline of high-impact roles, key achievements, and creative
+            leadership.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <h4 class="company-name">Self-Employed, NYC</h4>
+              <span class="timeline-date">Sep 2024 - Present</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-glow"></span>
+            </div>
+            <div class="timeline-right glass-card">
+              <h3 class="role-title">Lead Visual & Product Designer</h3>
+              <p class="role-description">
+                Directing product design strategy for high-growth tech ventures. Spearheading design systems,
+                multi-device mobile apps, and interactive 3D landing experiences with proven conversion gains.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <h4 class="company-name">Insight Agency</h4>
+              <span class="timeline-date">Jan 2022 - Aug 2024</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-glow"></span>
+            </div>
+            <div class="timeline-right glass-card">
+              <h3 class="role-title">Senior UI/UX Designer</h3>
+              <p class="role-description">
+                Crafted seamless end-to-end user flows, design tokens, and modular frontend component specifications for
+                fintech and consumer mobile applications, improving retention by 42%.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-left">
+              <h4 class="company-name">KG Design Studio</h4>
+              <span class="timeline-date">Sep 2020 - Dec 2021</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-glow"></span>
+            </div>
+            <div class="timeline-right glass-card">
+              <h3 class="role-title">Web & Interaction Designer</h3>
+              <p class="role-description">
+                Engineered brand identities, responsive layouts, motion prototypes, and client presentation systems for
+                multinational clients across fashion, technology, and health sectors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Why Hire Me Section -->
+    <section class="section why-me-section" id="why-me">
+      <div class="container">
+        <div class="why-me-grid">
+
+          <!-- Left: Glass Highlight Graphic Badge -->
+          <div class="why-me-visual">
+            <div class="glass-orb-container glass-card">
+              <div class="orb-ring"></div>
+              <div class="orb-inner">
+                <span class="orb-icon">✦</span>
+                <span class="orb-stat">99.8%</span>
+                <span class="orb-sub">Satisfaction Score</span>
+              </div>
+              <div class="orb-floating-badge badge-1 glass-card">
+                <span class="badge-icon">⚡</span>
+                <div class="badge-txt">
+                  <strong>Fast Delivery</strong>
+                  <span>Always on Schedule</span>
+                </div>
+              </div>
+              <div class="orb-floating-badge badge-2 glass-card">
+                <span class="badge-icon">🎯</span>
+                <div class="badge-txt">
+                  <strong>Conversion First</strong>
+                  <span>Data-Driven UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Content & Numbers -->
+          <div class="why-me-content">
+            <h2 class="section-title">Why You Should <span class="accent-text">Get in Touch</span> for Your Next
+              Projects?</h2>
+            <p class="why-me-desc">
+              I specialize in bridging the gap between elegant visual aesthetics and measurable business results. By
+              fusing meticulous user research, brand storytelling, and fluid motion design, I craft products that users
+              fall in love with.
+            </p>
+
+            <div class="why-me-stats">
+              <div class="why-stat-box glass-card">
+                <span class="why-stat-num">500+</span>
+                <span class="why-stat-label">Projects Completed</span>
+              </div>
+              <div class="why-stat-box glass-card">
+                <span class="why-stat-num">90+</span>
+                <span class="why-stat-label">Happy Global Clients</span>
+              </div>
+            </div>
+
+            <div class="why-me-actions">
+              <a href="#contact" class="btn btn-primary btn-lg">Get in Touch <span class="arrow">↗</span></a>
+              <a href="#portfolio" class="btn btn-glass btn-lg">View Work</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Portfolio Section -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-title-wrap">
+            <h2 class="section-title">Let's Have a Look at my <span class="accent-text">Portfolio</span></h2>
+          </div>
+          <a href="projects.html" class="btn btn-primary btn-md">All Projects <span class="arrow">↗</span></a>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio-filter-bar">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="uiux">UI/UX Design</button>
+          <button class="filter-tab" data-filter="app">App Design</button>
+          <button class="filter-tab" data-filter="web">Web Design</button>
+          <button class="filter-tab" data-filter="dashboard">Dashboard</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="portfolio-grid">
+
+          <!-- Project 1: Food Delivery Solution -->
+          <div class="portfolio-card glass-card">
+            <div class="portfolio-showcase-view">
+              <div class="showcase-mockup-inner">
+                <div class="mockup-app-screen main-screen">
+                  <div class="app-header">
+                    <span class="app-chip">Food Delivery</span>
+                    <span class="app-status">● Live</span>
+                  </div>
+                  <div class="app-food-hero">
+                    <div class="food-plate-graphic"></div>
+                    <div class="food-title-pill"></div>
+                  </div>
+                  <div class="app-food-grid">
+                    <div class="food-card"></div>
+                    <div class="food-card"></div>
+                  </div>
+                </div>
+                <div class="mockup-app-screen secondary-screen">
+                  <div class="app-header">
+                    <span class="app-chip">Order Track</span>
+                  </div>
+                  <div class="app-track-line"></div>
+                  <div class="app-driver-card"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card-info">
+              <div class="project-tags">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">App Design</span>
+                <span class="tag">Wireframe</span>
+              </div>
+              <h3 class="project-title">
+                Food Express - Food Delivery Solution <span class="verified-check">✓</span>
+              </h3>
+              <p class="project-desc">
+                An end-to-end mobile ordering ecosystem engineered for frictionless checkout, real-time live GPS driver
+                tracking, and AI-powered personalized dietary recommendations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project 2: SaaS & Wealth Dashboard -->
+          <div class="portfolio-card glass-card">
+            <div class="portfolio-showcase-view">
+              <div class="showcase-mockup-inner">
+                <div class="mockup-dashboard-screen">
+                  <div class="dash-sidebar">
+                    <div class="dash-icon active"></div>
+                    <div class="dash-icon"></div>
+                    <div class="dash-icon"></div>
+                  </div>
+                  <div class="dash-main">
+                    <div class="dash-top-bar">
+                      <div class="dash-title-bar"></div>
+                      <div class="dash-user-pill"></div>
+                    </div>
+                    <div class="dash-stat-row">
+                      <div class="dash-widget"></div>
+                      <div class="dash-widget"></div>
+                      <div class="dash-widget"></div>
+                    </div>
+                    <div class="dash-chart-area">
+                      <div class="chart-wave"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-card-info">
+              <div class="project-tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">Dashboard</span>
+                <span class="tag">FinTech</span>
+              </div>
+              <h3 class="project-title">
+                FinFlow - Global Wealth & Analytics <span class="verified-check">✓</span>
+              </h3>
+              <p class="project-desc">
+                Comprehensive wealth management and high-frequency trading platform featuring real-time data
+                visualizers, automated rebalancing algorithms, and ultra-responsive dark UI.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <div class="sparkle-title">
+            <span class="sparkle">✦</span>
+            <h2 class="section-title">Testimonials that Speak to <span class="accent-text">My Results</span></h2>
+          </div>
+          <p class="section-subtitle centered">
+            Don't just take my word for it — hear what industry leaders, founders, and product directors have to say.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="rating-val">5.0</span>
+            </div>
+            <p class="testimonial-quote">
+              “Srikar’s ability to turn complex workflows into breathtaking, easy-to-use interfaces is unmatched. Our
+              customer conversion rates jumped 38% immediately after launching the redesign.”
+            </p>
+            <div class="testimonial-footer">
+              <div class="client-avatar avatar-1">JW</div>
+              <div class="client-info">
+                <h4 class="client-name">Jenny Wilson</h4>
+                <span class="client-role">Product Director, TechPulse</span>
+              </div>
+              <div class="quote-bg-icon">”</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="rating-val">5.0</span>
+            </div>
+            <p class="testimonial-quote">
+              “Working with Srikar felt effortless. The level of craftsmanship, responsiveness, and attention to
+              micro-interactions exceeded our highest expectations. He is our go-to designer.”
+            </p>
+            <div class="testimonial-footer">
+              <div class="client-avatar avatar-2">RF</div>
+              <div class="client-info">
+                <h4 class="client-name">Robert Fox</h4>
+                <span class="client-role">Founder, Nova Labs</span>
+              </div>
+              <div class="quote-bg-icon">”</div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="rating-val">5.0</span>
+            </div>
+            <p class="testimonial-quote">
+              “From initial wireframes to interactive high-fidelity prototypes, Srikar delivered a world-class
+              experience. The smooth animations and polish brought our product to life.”
+            </p>
+            <div class="testimonial-footer">
+              <div class="client-avatar avatar-3">SM</div>
+              <div class="client-info">
+                <h4 class="client-name">Sophia Martinez</h4>
+                <span class="client-role">Head of UX, Apex Studio</span>
+              </div>
+              <div class="quote-bg-icon">”</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Continuous Animated Marquee Ticker -->
+    <div class="ticker-ribbon">
+      <div class="ticker-track">
+        <span class="ticker-item">Design <span class="plus">+</span></span>
+        <span class="ticker-item">App Design <span class="plus">+</span></span>
+        <span class="ticker-item">Dashboard <span class="plus">+</span></span>
+        <span class="ticker-item">Wireframes <span class="plus">+</span></span>
+        <span class="ticker-item">User Research <span class="plus">+</span></span>
+        <span class="ticker-item">Web Design <span class="plus">+</span></span>
+        <span class="ticker-item">Design Systems <span class="plus">+</span></span>
+        <span class="ticker-item">Interaction Design <span class="plus">+</span></span>
+        <!-- Duplicated for seamless infinite loop -->
+        <span class="ticker-item">Design <span class="plus">+</span></span>
+        <span class="ticker-item">App Design <span class="plus">+</span></span>
+        <span class="ticker-item">Dashboard <span class="plus">+</span></span>
+        <span class="ticker-item">Wireframes <span class="plus">+</span></span>
+        <span class="ticker-item">User Research <span class="plus">+</span></span>
+        <span class="ticker-item">Web Design <span class="plus">+</span></span>
+        <span class="ticker-item">Design Systems <span class="plus">+</span></span>
+        <span class="ticker-item">Interaction Design <span class="plus">+</span></span>
+      </div>
+    </div>
+
+    <!-- 8. Blog Section -->
+    <section class="section blog-section" id="blog">
+      <div class="container">
+        <div class="section-header-split">
+          <div class="section-title-wrap">
+            <h2 class="section-title">From my <span class="accent-text">blog post</span></h2>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-md">View All <span class="arrow">↗</span></a>
+        </div>
+
+        <div class="blog-grid">
+
+          <!-- Blog Card 1 -->
+          <article class="blog-card glass-card">
+            <div class="blog-thumb">
+              <div class="blog-graphic-workspace">
+                <div class="desk-setup">
+                  <div class="screen-monitor"></div>
+                  <div class="screen-stand"></div>
+                  <div class="ambient-glow"></div>
+                </div>
+              </div>
+              <a href="#contact" class="blog-action-btn" aria-label="Read Post">
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+            <div class="blog-content">
+              <span class="blog-category">UI/UX Design</span>
+              <h3 class="blog-post-title">Design Unveiled: Behind the Scenes of UI/UX Magic</h3>
+              <div class="blog-meta">
+                <span class="author">Srikar</span>
+                <span class="dot">•</span>
+                <span class="date">26 Sep 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 2 (Featured) -->
+          <article class="blog-card glass-card featured-blog">
+            <div class="blog-thumb">
+              <div class="blog-graphic-tablet">
+                <div class="tablet-frame">
+                  <div class="stylus-pen"></div>
+                  <div class="wireframe-lines"></div>
+                </div>
+              </div>
+              <a href="#contact" class="blog-action-btn active" aria-label="Read Post">
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+            <div class="blog-content">
+              <span class="blog-category">App Creative</span>
+              <h3 class="blog-post-title">Mastering Aesthetics: Creating Intuitive Apps for Gen Z</h3>
+              <div class="blog-meta">
+                <span class="author">Srikar</span>
+                <span class="dot">•</span>
+                <span class="date">02 Oct 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Card 3 -->
+          <article class="blog-card glass-card">
+            <div class="blog-thumb">
+              <div class="blog-graphic-code">
+                <div class="code-terminal">
+                  <div class="term-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="term-lines"></div>
+                </div>
+              </div>
+              <a href="#contact" class="blog-action-btn" aria-label="Read Post">
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+            <div class="blog-content">
+              <span class="blog-category">Design Systems</span>
+              <h3 class="blog-post-title">Scalable UI Systems: From Zero to 100 Components</h3>
+              <div class="blog-meta">
+                <span class="author">Srikar</span>
+                <span class="dot">•</span>
+                <span class="date">14 Oct 2024</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section ("Let's Build Your Digital Future") -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-container">
+
+          <!-- Left Column: Copy & Direct Contact Info -->
+          <div class="contact-info-col">
+            <div class="contact-badge-pill">
+              <span class="contact-badge-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+              </span>
+              <span>Start A Project</span>
+            </div>
+
+            <h2 class="contact-main-title">
+              Let's Build Your <br>
+              <span class="accent-text">Digital Future</span>
+            </h2>
+
+            <p class="contact-main-desc">
+              Ready to launch your next project? Fill out the form below or reach out directly to start a conversation
+              about your business needs and how we can help you grow.
+            </p>
+
+            <div class="contact-quick-details">
+              <a href="tel:+15553829012" class="contact-detail-pill">
+                <span class="detail-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
+                  </svg>
+                </span>
+                <span class="detail-text">+1 (555) 382-9012</span>
+              </a>
+
+              <div class="contact-detail-pill">
+                <span class="detail-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                  </svg>
+                </span>
+                <span class="detail-text">Hyderabad</span>
+              </div>
+
+              <a href="mailto:srikar@portfolio.design" class="contact-detail-pill full-width-pill">
+                <span class="detail-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                </span>
+                <span class="detail-text">srikar@portfolio.design</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Warm Amber Accent Form Panel -->
+          <div class="contact-form-panel">
+            <form class="project-inquiry-form" id="project-contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Phone or Email</label>
+                <input type="text" id="contact-email" name="contact" class="form-input" placeholder="Email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-service" class="form-label">Services</label>
+                <div class="select-wrapper">
+                  <select id="contact-service" name="service" class="form-select" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="UI/UX Design">UI/UX Design & Prototyping</option>
+                    <option value="3D Web Experiences">3D & Interactive Experiences</option>
+                    <option value="Mobile App Design">Mobile App Design</option>
+                    <option value="Design Systems">Design Systems Architecture</option>
+                    <option value="Full Digital Product">Full Digital Product Launch</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
+                  <span class="submit-icon-circle">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                    </svg>
+                  </span>
+                  <span>Submit</span>
+                </button>
+              </div>
+
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+
+        <!-- Main Footer Links Grid -->
+        <div class="footer-grid">
+
+          <!-- Column 1: Brand & Socials -->
+          <div class="footer-col brand-col">
+            <a href="#hero" class="brand-logo footer-logo">
+              <span class="logo-icon">S</span>
+              <span class="logo-text">Srikar <span class="accent-text">Portfolio</span></span>
+            </a>
+            <p class="footer-bio">
+              Crafting high-performance digital products, intuitive user experiences, and award-winning interfaces with
+              precision and passion.
+            </p>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+              </a>
+              <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-icon" aria-label="Dribbble">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm9.849 10.638a10.02 10.02 0 0 1-.989 3.064c-.387-.133-1.92-.619-3.931-.619-.481 0-.96.03-1.436.088a24.16 24.16 0 0 0-.414-1.545c2.359-1.077 4.54-1.137 4.776-1.141a9.92 9.92 0 0 1 1.994.153zM12 2.046c2.464 0 4.716.892 6.467 2.373-.321.22-2.304 1.488-4.708 2.394-1.189-2.221-2.457-4.14-2.617-4.382A9.97 9.97 0 0 1 12 2.046zm-2.88.94c.163.243 1.424 2.152 2.627 4.356-3.292 1.052-6.529 1.157-7.275 1.166A9.957 9.957 0 0 1 9.12 2.986zm-7.074 8.44c.594-.01 3.513-.105 6.741-1.07.247.534.484 1.077.708 1.624-3.87 1.258-7.394 4.093-7.618 4.276a9.947 9.947 0 0 1 .169-4.83zm3.176 6.136c.45-.371 3.633-2.87 7.42-4.053.86 2.27 1.48 4.67 1.764 5.922A9.96 9.96 0 0 1 5.222 17.562zm11.455 1.986c-.26-1.147-.834-3.39-1.637-5.541 1.834-.047 3.328.375 3.738.513a9.943 9.943 0 0 1-2.101 5.028z" />
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#why-me">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Details -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <ul class="footer-contact-list">
+              <li><span class="contact-label">Email:</span> <a
+                  href="mailto:srikar@portfolio.design">srikar@portfolio.design</a></li>
+              <li><span class="contact-label">Phone:</span> <a href="tel:+15553829012">+1 (555) 382-9012</a></li>
+              <li><span class="contact-label">Location:</span> New York, NY / Remote</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Newsletter -->
+          <div class="footer-col newsletter-col">
+            <h4 class="footer-col-title">Get the latest information</h4>
+            <p class="footer-newsletter-text">Subscribe for curated UX insights, design system drops, and project
+              releases.</p>
+            <form class="footer-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+              <input type="email" placeholder="Email address..." class="footer-input" required>
+              <button type="submit" class="footer-btn" aria-label="Subscribe">➔</button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="footer-bottom">
+          <p class="copyright-text">
+            Copyright © 2026 <span class="accent-text">Srikar Portfolio</span>. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">|</span>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Action Buttons: WhatsApp & Call Now -->
+  <div class="floating-contact-group" id="floating-contact">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/15553829012?text=Hi%20Srikar%2C%20I'd%20like%20to%20discuss%20a%20project!" target="_blank"
+      rel="noopener" class="floating-btn floating-whatsapp" aria-label="Chat on WhatsApp" id="btn-floating-whatsapp">
+      <span class="floating-btn-tooltip">Chat on WhatsApp</span>
+      <div class="floating-btn-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+      </div>
+      <span class="floating-btn-pulse"></span>
+    </a>
+
+    <!-- Call Now Floating Button -->
+    <a href="tel:+15553829012" class="floating-btn floating-call" aria-label="Call Now" id="btn-floating-call">
+      <span class="floating-btn-tooltip">Call Now</span>
+      <div class="floating-btn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z" />
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

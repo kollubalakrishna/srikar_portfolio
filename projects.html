@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Case Studies | Srikar Portfolio</title>
+  <meta name="description" content="Explore selected projects and in-depth UI/UX case studies by Srikar - Product Designer & Creative Technologist.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="projects.css?v=1">
+</head>
+<body class="projects-page">
+
+  <!-- Ambient Background Lighting Orbs -->
+  <div class="ambient-glow-orb glow-top-left"></div>
+  <div class="ambient-glow-orb glow-top-right"></div>
+  <div class="ambient-glow-orb glow-mid-center"></div>
+  <div class="ambient-glow-orb glow-bottom-left"></div>
+
+  <!-- Page Content Container -->
+  <div class="page-wrapper">
+
+    <!-- Mobile Navigation Backdrop Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <!-- Floating Pill Header -->
+    <header class="header-container">
+      <nav class="pill-navbar">
+        <a href="index.html#hero" class="brand-logo">
+          <span class="logo-icon">S</span>
+          <span class="logo-text">Srikar <span class="accent-text">Portfolio</span></span>
+        </a>
+
+        <!-- Left-to-Right Slide Drawer on Mobile -->
+        <ul class="nav-links" id="nav-links">
+          <!-- Mobile Drawer Header with Close Button -->
+          <li class="mobile-drawer-header">
+            <a href="index.html#hero" class="brand-logo">
+              <span class="logo-icon">S</span>
+              <span class="logo-text">Srikar <span class="accent-text">Portfolio</span></span>
+            </a>
+            <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Close navigation">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </li>
+
+          <li><a href="index.html#hero" class="nav-link">Home</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="index.html#why-me" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="index.html#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+
+          <!-- Mobile Drawer Footer CTA -->
+          <li class="mobile-drawer-footer">
+            <a href="#contact" class="btn btn-primary btn-md mobile-drawer-btn">Get in Touch <span class="arrow">↗</span></a>
+          </li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">Get in Touch <span class="arrow">↗</span></a>
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =============================================================
+         SECTION 1: HERO & OVERVIEW (TOP TITLE + SUBTEXT)
+         ============================================================= -->
+    <section class="projects-hero-section">
+      <div class="container">
+        <div class="projects-hero-content text-center">
+          
+          <div class="badge-pill">
+            <span class="sparkle">✦</span> PORTFOLIO ARCHIVE • 2024
+          </div>
+
+          <h1 class="projects-hero-title">
+            Featured Projects & <br>
+            <span class="accent-text">Selected Case Studies</span>
+          </h1>
+
+          <p class="projects-hero-subtext">
+            A comprehensive archive of production-ready digital products, high-conversion mobile applications, interactive 3D platforms, and scalable design systems built for global scale and measurable user impact.
+          </p>
+
+          <!-- Key Metrics Counter Bar -->
+          <div class="projects-metrics-bar glass-card">
+            <div class="metric-item">
+              <span class="metric-val">14+</span>
+              <span class="metric-name">Delivered Products</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">4.9★</span>
+              <span class="metric-name">Client Satisfaction</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">100%</span>
+              <span class="metric-name">On-Time Launch</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">$85M+</span>
+              <span class="metric-name">Client Value Created</span>
+            </div>
+          </div>
+
+          <!-- Filter Pill Tabs -->
+          <div class="projects-filter-bar">
+            <button class="filter-btn active" data-filter="all">All Works (6)</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-btn" data-filter="saas">Web & SaaS</button>
+            <button class="filter-btn" data-filter="fintech">FinTech & Wealth</button>
+            <button class="filter-btn" data-filter="systems">Design Systems</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION 2: COMPREHENSIVE PROJECTS SHOWCASE GRID
+         ============================================================= -->
+    <section class="section projects-grid-section">
+      <div class="container">
+        
+        <div class="projects-gallery-grid" id="projects-gallery">
+          
+          <!-- Project Card 1: Food Express -->
+          <article class="project-showcase-card glass-card" data-category="mobile">
+            <div class="project-preview-wrap">
+              <div class="mockup-frame">
+                <div class="screen-mobile-duo">
+                  <div class="screen-mobile-main">
+                    <div class="screen-status-bar">
+                      <span>9:41</span>
+                      <span>5G ●</span>
+                    </div>
+                    <div class="screen-hero-food">
+                      <div class="badge-tag">FAST DELIVERY</div>
+                      <div class="food-avatar-circle"></div>
+                    </div>
+                    <div class="screen-list-items">
+                      <div class="list-bar"></div>
+                      <div class="list-bar short"></div>
+                    </div>
+                  </div>
+                  <div class="screen-mobile-back">
+                    <div class="screen-status-bar">
+                      <span>Live Tracker</span>
+                    </div>
+                    <div class="gps-route-line"></div>
+                    <div class="driver-pin"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-category-chip">Mobile App</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-year">2024</span>
+                <span class="project-impact-badge">+38% Order Conversion</span>
+              </div>
+              <h2 class="project-title-h2">
+                Food Express - Food Delivery Ecosystem <span class="verified-check">✓</span>
+              </h2>
+              <p class="project-summary">
+                A comprehensive mobile ordering platform engineered for frictionless checkout, live turn-by-turn GPS driver tracking, and machine-learning dietary recommendations.
+              </p>
+              <div class="project-tag-list">
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">iOS & Android</span>
+                <span class="tag">Figma Prototype</span>
+              </div>
+              <div class="project-action-row">
+                <a href="#case-study" class="btn btn-glass btn-sm">Read Case Study <span class="arrow">↓</span></a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Discuss Project <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: FinFlow -->
+          <article class="project-showcase-card glass-card" data-category="saas fintech">
+            <div class="project-preview-wrap">
+              <div class="mockup-frame">
+                <div class="screen-desktop-dash">
+                  <div class="dash-header-bar">
+                    <div class="dash-brand-dot"></div>
+                    <div class="dash-search-pill"></div>
+                  </div>
+                  <div class="dash-grid-layout">
+                    <div class="dash-col-left">
+                      <div class="balance-card">
+                        <span class="card-label">Portfolio Balance</span>
+                        <span class="card-val">$248,910.40</span>
+                      </div>
+                      <div class="chart-sparkline"></div>
+                    </div>
+                    <div class="dash-col-right">
+                      <div class="order-book-row"></div>
+                      <div class="order-book-row"></div>
+                      <div class="order-book-row"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-category-chip">Web & SaaS</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-year">2024</span>
+                <span class="project-impact-badge">$14.2M Daily Vol</span>
+              </div>
+              <h2 class="project-title-h2">
+                FinFlow - Global Wealth & Telemetry <span class="verified-check">✓</span>
+              </h2>
+              <p class="project-summary">
+                High-frequency trading and multi-asset wealth management terminal featuring real-time data visualizers, automated rebalancing algorithms, and ultra-responsive dark UI.
+              </p>
+              <div class="project-tag-list">
+                <span class="tag">FinTech</span>
+                <span class="tag">Dashboard UI</span>
+                <span class="tag">Design System</span>
+              </div>
+              <div class="project-action-row">
+                <a href="#case-study" class="btn btn-glass btn-sm">Read Case Study <span class="arrow">↓</span></a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Discuss Project <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: HealthPulse -->
+          <article class="project-showcase-card glass-card" data-category="mobile">
+            <div class="project-preview-wrap">
+              <div class="mockup-frame">
+                <div class="screen-mobile-duo">
+                  <div class="screen-mobile-main health-theme">
+                    <div class="screen-status-bar">
+                      <span>HealthPulse</span>
+                      <span>● Active</span>
+                    </div>
+                    <div class="vitals-heart-card">
+                      <span class="pulse-icon">♥</span>
+                      <span class="bpm-num">72 BPM</span>
+                    </div>
+                    <div class="doc-consult-card">
+                      <div class="doc-avatar"></div>
+                      <div class="doc-lines"></div>
+                    </div>
+                  </div>
+                  <div class="screen-mobile-back health-theme">
+                    <div class="calendar-pill"></div>
+                    <div class="calendar-grid-mock"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-category-chip">Mobile App</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-year">2023</span>
+                <span class="project-impact-badge">4.9★ (85k+ Reviews)</span>
+              </div>
+              <h2 class="project-title-h2">
+                HealthPulse - Telemedicine & Biometrics <span class="verified-check">✓</span>
+              </h2>
+              <p class="project-summary">
+                HIPAA-compliant patient telemedicine app linking users with certified doctors via encrypted HD video calls, automated prescription delivery, and biometric health tracking.
+              </p>
+              <div class="project-tag-list">
+                <span class="tag">Healthcare</span>
+                <span class="tag">Mobile App</span>
+                <span class="tag">Biometrics</span>
+              </div>
+              <div class="project-action-row">
+                <a href="index.html#contact" class="btn btn-glass btn-sm">Request Demo <span class="arrow">↗</span></a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Discuss Project <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 4: Apex SaaS Design System -->
+          <article class="project-showcase-card glass-card" data-category="systems saas">
+            <div class="project-preview-wrap">
+              <div class="mockup-frame">
+                <div class="design-system-preview">
+                  <div class="ds-palette-row">
+                    <span class="swatch sw-1"></span>
+                    <span class="swatch sw-2"></span>
+                    <span class="swatch sw-3"></span>
+                    <span class="swatch sw-4"></span>
+                  </div>
+                  <div class="ds-components-mock">
+                    <div class="ds-btn-mock">Button Primary</div>
+                    <div class="ds-switch-mock"></div>
+                    <div class="ds-input-mock">Input field...</div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-category-chip">Design Systems</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-year">2024</span>
+                <span class="project-impact-badge">65% Faster Dev Handoff</span>
+              </div>
+              <h2 class="project-title-h2">
+                Apex SaaS - Enterprise Design System <span class="verified-check">✓</span>
+              </h2>
+              <p class="project-summary">
+                A unified multi-platform component library featuring 140+ accessible Figma components, automated WCAG AAA contrast audits, and cross-framework token architecture.
+              </p>
+              <div class="project-tag-list">
+                <span class="tag">Design Tokens</span>
+                <span class="tag">Component Library</span>
+                <span class="tag">Figma Tokens</span>
+              </div>
+              <div class="project-action-row">
+                <a href="index.html#contact" class="btn btn-glass btn-sm">View System <span class="arrow">↗</span></a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Discuss Project <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 5: Kroma 3D Store -->
+          <article class="project-showcase-card glass-card" data-category="saas">
+            <div class="project-preview-wrap">
+              <div class="mockup-frame">
+                <div class="screen-desktop-dash fashion-theme">
+                  <div class="fashion-3d-model">
+                    <div class="model-torso"></div>
+                    <div class="rotation-axis-ring"></div>
+                  </div>
+                  <div class="fashion-controls">
+                    <div class="size-pill">Size: M</div>
+                    <div class="color-swatches-mini">
+                      <span></span><span></span><span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-category-chip">Web & 3D</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-year">2023</span>
+                <span class="project-impact-badge">+54% Session Length</span>
+              </div>
+              <h2 class="project-title-h2">
+                Kroma Studio - Interactive 3D Fashion <span class="verified-check">✓</span>
+              </h2>
+              <p class="project-summary">
+                Next-generation luxury fashion storefront featuring real-time interactive WebGL 3D garment inspection, dynamic virtual fitting rooms, and frictionless checkout.
+              </p>
+              <div class="project-tag-list">
+                <span class="tag">Interactive 3D</span>
+                <span class="tag">WebGL UI</span>
+                <span class="tag">E-Commerce</span>
+              </div>
+              <div class="project-action-row">
+                <a href="index.html#contact" class="btn btn-glass btn-sm">Explore Store <span class="arrow">↗</span></a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Discuss Project <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 6: AutoDrive -->
+          <article class="project-showcase-card glass-card" data-category="mobile">
+            <div class="project-preview-wrap">
+              <div class="mockup-frame">
+                <div class="screen-mobile-duo">
+                  <div class="screen-mobile-main auto-theme">
+                    <div class="screen-status-bar">
+                      <span>AutoDrive EV</span>
+                      <span>84% Charged</span>
+                    </div>
+                    <div class="battery-gauge-ring">
+                      <div class="gauge-center">
+                        <span class="range-num">312</span>
+                        <span class="range-unit">MILES</span>
+                      </div>
+                    </div>
+                    <div class="auto-quick-actions">
+                      <div class="action-sq">Lock</div>
+                      <div class="action-sq">Climate</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-category-chip">Mobile & IoT</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-year">2023</span>
+                <span class="project-impact-badge">99.98% Telemetry Uptime</span>
+              </div>
+              <h2 class="project-title-h2">
+                AutoDrive - Connected Vehicle Telemetry <span class="verified-check">✓</span>
+              </h2>
+              <p class="project-summary">
+                Companion mobile ecosystem for electric vehicle owners offering real-time battery diagnostics, automated climate preconditioning, remote lock controls, and GPS charge routing.
+              </p>
+              <div class="project-tag-list">
+                <span class="tag">Automotive IoT</span>
+                <span class="tag">Mobile App</span>
+                <span class="tag">Telemetry</span>
+              </div>
+              <div class="project-action-row">
+                <a href="index.html#contact" class="btn btn-glass btn-sm">View Prototype <span class="arrow">↗</span></a>
+                <a href="index.html#contact" class="btn btn-primary btn-sm">Discuss Project <span class="arrow">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION 3: FLAGSHIP CASE STUDY SPOTLIGHT
+         ============================================================= -->
+    <section class="section case-study-section" id="case-study">
+      <div class="container">
+        
+        <div class="case-study-spotlight glass-card">
+          
+          <div class="spotlight-header text-center">
+            <div class="badge-pill">
+              <span class="sparkle">✦</span> IN-DEPTH CASE STUDY SPOTLIGHT
+            </div>
+            <h2 class="section-title">
+              Deep-Dive: <span class="accent-text">Food Express Redesign</span>
+            </h2>
+            <p class="section-subtitle centered">
+              How we solved checkout abandonment, streamlined ordering velocity, and engineered a high-converting mobile experience for over 1.2M monthly active diners.
+            </p>
+          </div>
+
+          <div class="case-study-phases-grid">
+            
+            <!-- Phase 1 -->
+            <div class="phase-card glass-card">
+              <div class="phase-number">01</div>
+              <h3 class="phase-title">Research & Bottleneck Discovery</h3>
+              <p class="phase-desc">
+                We tracked 1,200 user ordering sessions and identified that 42% of abandoned carts occurred during custom dietary allergen selections and unexpected tip additions.
+              </p>
+              <ul class="phase-points">
+                <li>• Conducted 24 in-depth customer interviews</li>
+                <li>• Mapped 5 competitor benchmark user flows</li>
+                <li>• Isolated checkout micro-friction points</li>
+              </ul>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-card glass-card active-phase">
+              <div class="phase-number">02</div>
+              <h3 class="phase-title">UX Architecture & Motion Prototyping</h3>
+              <p class="phase-desc">
+                Re-architected the checkout flow into an intuitive swipeable bottom sheet with 1-tap Apple Pay and instant live driver tracking animations.
+              </p>
+              <ul class="phase-points">
+                <li>• Modular expandable bottom-sheet UI</li>
+                <li>• Smooth turn-by-turn SVG driver route animation</li>
+                <li>• Zero-latency dietary allergen chips</li>
+              </ul>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-card glass-card">
+              <div class="phase-number">03</div>
+              <h3 class="phase-title">Business Outcomes & Impact</h3>
+              <p class="phase-desc">
+                Following the nationwide rollout, checkout completion increased significantly while customer support tickets regarding delivery status dropped by 64%.
+              </p>
+              <div class="outcome-stat-row">
+                <div class="outcome-stat">
+                  <span class="stat-big">+38%</span>
+                  <span class="stat-small">Checkout Conversion</span>
+                </div>
+                <div class="outcome-stat">
+                  <span class="stat-big">-45s</span>
+                  <span class="stat-small">Time-to-Order</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION 4: WORKFLOW & CLIENT COLLABORATION PROCESS
+         ============================================================= -->
+    <section class="section workflow-section">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <h2 class="section-title">
+            Structured for Speed & <span class="accent-text">Design Excellence</span>
+          </h2>
+          <p class="section-subtitle centered">
+            A transparent, collaborative 4-step creative engineering process designed to eliminate guesswork, accelerate validation, and launch flawless digital products.
+          </p>
+        </div>
+
+        <div class="workflow-steps-grid">
+          
+          <div class="workflow-card glass-card">
+            <span class="step-num">STEP 01</span>
+            <h3 class="step-title">Discovery & Product Strategy</h3>
+            <p class="step-desc">
+              We align on business goals, technical constraints, target personas, and market opportunities to define clear design KPIs before wireframing begins.
+            </p>
+          </div>
+
+          <div class="workflow-card glass-card">
+            <span class="step-num">STEP 02</span>
+            <h3 class="step-title">Wireframing & UX Architecture</h3>
+            <p class="step-desc">
+              Rapid low-fidelity prototyping to validate user journeys, eliminate friction, and ensure logical information architecture across all device viewports.
+            </p>
+          </div>
+
+          <div class="workflow-card glass-card">
+            <span class="step-num">STEP 03</span>
+            <h3 class="step-title">High-Fidelity UI & Motion Craft</h3>
+            <p class="step-desc">
+              Translating wireframes into pixel-perfect, accessible interfaces with custom design tokens, dark mode palettes, and fluid micro-interactions.
+            </p>
+          </div>
+
+          <div class="workflow-card glass-card">
+            <span class="step-num">STEP 04</span>
+            <h3 class="step-title">Developer Handoff & Launch QA</h3>
+            <p class="step-desc">
+              Cleanly structured Figma tokens, responsive layout specifications, asset exports, and direct engineering collaboration through production release.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Collaboration CTA Banner -->
+        <div class="workflow-cta-banner glass-card">
+          <div class="cta-banner-text">
+            <h3 class="cta-banner-title">Have an ambitious project idea?</h3>
+            <p class="cta-banner-desc">Let's discuss your timeline, scope, and technical roadmap to build something extraordinary.</p>
+          </div>
+          <a href="index.html#contact" class="btn btn-primary btn-lg">Get in Touch <span class="arrow">↗</span></a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION 5: CONTACT ("LET'S BUILD YOUR DIGITAL FUTURE")
+         ============================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-container">
+          
+          <!-- Left Column: Copy & Direct Contact Info -->
+          <div class="contact-info-col">
+            <div class="contact-badge-pill">
+              <span class="contact-badge-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </span>
+              <span>Start A Project</span>
+            </div>
+
+            <h2 class="contact-main-title">
+              Let's Build Your <br>
+              <span class="accent-text">Digital Future</span>
+            </h2>
+
+            <p class="contact-main-desc">
+              Ready to launch your next project? Fill out the form below or reach out directly to start a conversation about your business needs and how we can help you grow.
+            </p>
+
+            <div class="contact-quick-details">
+              <a href="tel:+15553829012" class="contact-detail-pill">
+                <span class="detail-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+                  </svg>
+                </span>
+                <span class="detail-text">+1 (555) 382-9012</span>
+              </a>
+
+              <div class="contact-detail-pill">
+                <span class="detail-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </span>
+                <span class="detail-text">San Francisco, CA</span>
+              </div>
+
+              <a href="mailto:srikar@portfolio.design" class="contact-detail-pill full-width-pill">
+                <span class="detail-icon-circle">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </span>
+                <span class="detail-text">srikar@portfolio.design</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Warm Amber Accent Form Panel -->
+          <div class="contact-form-panel">
+            <form class="project-inquiry-form" id="project-contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Phone or Email</label>
+                <input type="text" id="contact-email" name="contact" class="form-input" placeholder="Email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-service" class="form-label">Services</label>
+                <div class="select-wrapper">
+                  <select id="contact-service" name="service" class="form-select" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="UI/UX Design">UI/UX Design & Prototyping</option>
+                    <option value="3D Web Experiences">3D & Interactive Experiences</option>
+                    <option value="Mobile App Design">Mobile App Design</option>
+                    <option value="Design Systems">Design Systems Architecture</option>
+                    <option value="Full Digital Product">Full Digital Product Launch</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
+                  <span class="submit-icon-circle">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                  </span>
+                  <span>Submit</span>
+                </button>
+              </div>
+
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         SECTION 6: FOOTER (MATCHES LANDING PAGE DESIGN)
+         ============================================================= -->
+    <footer class="footer-section">
+      <div class="container">
+
+        <!-- Main Footer Links Grid -->
+        <div class="footer-grid">
+          
+          <!-- Column 1: Brand & Socials -->
+          <div class="footer-col brand-col">
+            <a href="index.html#hero" class="brand-logo footer-logo">
+              <span class="logo-icon">S</span>
+              <span class="logo-text">Srikar <span class="accent-text">Portfolio</span></span>
+            </a>
+            <p class="footer-bio">
+              Crafting high-performance digital products, intuitive user experiences, and award-winning interfaces with precision and passion.
+            </p>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" class="social-icon" aria-label="X (Twitter)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-icon" aria-label="Dribbble">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm9.849 10.638a10.02 10.02 0 0 1-.989 3.064c-.387-.133-1.92-.619-3.931-.619-.481 0-.96.03-1.436.088a24.16 24.16 0 0 0-.414-1.545c2.359-1.077 4.54-1.137 4.776-1.141a9.92 9.92 0 0 1 1.994.153zM12 2.046c2.464 0 4.716.892 6.467 2.373-.321.22-2.304 1.488-4.708 2.394-1.189-2.221-2.457-4.14-2.617-4.382A9.97 9.97 0 0 1 12 2.046zm-2.88.94c.163.243 1.424 2.152 2.627 4.356-3.292 1.052-6.529 1.157-7.275 1.166A9.957 9.957 0 0 1 9.12 2.986zm-7.074 8.44c.594-.01 3.513-.105 6.741-1.07.247.534.484 1.077.708 1.624-3.87 1.258-7.394 4.093-7.618 4.276a9.947 9.947 0 0 1 .169-4.83zm3.176 6.136c.45-.371 3.633-2.87 7.42-4.053.86 2.27 1.48 4.67 1.764 5.922A9.96 9.96 0 0 1 5.222 17.562zm11.455 1.986c-.26-1.147-.834-3.39-1.637-5.541 1.834-.047 3.328.375 3.738.513a9.943 9.943 0 0 1-2.101 5.028z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html#hero">Home</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="index.html#experience">Experience</a></li>
+              <li><a href="index.html#why-me">Why Get in Touch</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="index.html#blog">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Details -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <ul class="footer-contact-list">
+              <li><span class="contact-label">Email:</span> <a href="mailto:srikar@portfolio.design">srikar@portfolio.design</a></li>
+              <li><span class="contact-label">Phone:</span> <a href="tel:+15553829012">+1 (555) 382-9012</a></li>
+              <li><span class="contact-label">Location:</span> New York, NY / Remote</li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Newsletter -->
+          <div class="footer-col newsletter-col">
+            <h4 class="footer-col-title">Get the latest information</h4>
+            <p class="footer-newsletter-text">Subscribe for curated UX insights, design system drops, and project releases.</p>
+            <form class="footer-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+              <input type="email" placeholder="Email address..." class="footer-input" required>
+              <button type="submit" class="footer-btn" aria-label="Subscribe">➔</button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="footer-bottom">
+          <p class="copyright-text">
+            Copyright © 2024 <span class="accent-text">Srikar Portfolio</span>. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span class="divider">|</span>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating Action Buttons: WhatsApp & Call Now -->
+  <div class="floating-contact-group" id="floating-contact">
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/15553829012?text=Hi%20Srikar%2C%20I'd%20like%20to%20discuss%20a%20project!" 
+       target="_blank" 
+       rel="noopener" 
+       class="floating-btn floating-whatsapp" 
+       aria-label="Chat on WhatsApp"
+       id="btn-floating-whatsapp">
+      <span class="floating-btn-tooltip">Chat on WhatsApp</span>
+      <div class="floating-btn-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </div>
+      <span class="floating-btn-pulse"></span>
+    </a>
+
+    <!-- Call Now Floating Button -->
+    <a href="tel:+15553829012" 
+       class="floating-btn floating-call" 
+       aria-label="Call Now"
+       id="btn-floating-call">
+      <span class="floating-btn-tooltip">Call Now</span>
+      <div class="floating-btn-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-2.2 2.2a15.053 15.053 0 01-6.59-6.59l2.2-2.21a.96.96 0 00.25-1A11.36 11.36 0 018.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <script src="projects.js"></script>
+</body>
+</html>
